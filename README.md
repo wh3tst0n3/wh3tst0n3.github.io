@@ -1,7 +1,3 @@
 # wh3tst0n3.github.io
 
-## Sanity Check
-
-## 7 January 26
-
-A Github Pages sanity check blog
+This page will serve as docs and a devlog for my game projects as soon as i stop breaking them immediately after creation.
