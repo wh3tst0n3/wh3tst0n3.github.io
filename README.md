@@ -6,6 +6,7 @@
 
 - Can be added in code via macros
 
+
 ``` cpp
 
 // In the header file
@@ -26,9 +27,12 @@ UE_DEFINE_GAMEPLAY_TAG(TAG_Equipment_Type_Weapon, "Equipment.Type.Weapo");
 
 ```
 
-## Using GAmeplay Tags in C++
+
+## Using Gameplay Tags in C++
+
 
 ``` cpp
+
 #include "GameplayTagContainer.h"
 #include "MyActor.generated.h"
 
@@ -60,11 +64,14 @@ if (GameplayTags.HasTagExact(TAG_Weapon_Type_Rifle))
 {
     // Handle specific rifle logic
 }
+
 ```
+
 ## Custom Debug Logs
 
 
 - Can be added in code via macros
+
 ``` cpp
 
 // In the header file
