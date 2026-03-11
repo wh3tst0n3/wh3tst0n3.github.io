@@ -1,5 +1,7 @@
 # UnrealPages
 
+## [Asset Manager](AssetManager.d)
+
 ## GameplayTags
 
 - Can be added in code via macros
