@@ -1,6 +1,6 @@
 # UnrealPages
 
-## [Asset Manager](AssetManager.d)
+## [Asset Manager](AssetManager.md)
 
 ## GameplayTags
 
