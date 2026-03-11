@@ -72,6 +72,7 @@ if (GameplayTags.HasTagExact(TAG_Weapon_Type_Rifle))
 
 - Can be added in code via macros
 
+
 ``` cpp
 
 // In the header file
@@ -81,6 +82,7 @@ DECLARE_LOG_CATEGORY_EXTERN(MyLogName, Log, All);
 DEFINE_LOG_CATEGORY(MyLogName);
 
 ```
+
 
 You can then use your custom log category when 
 
