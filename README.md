@@ -5,6 +5,7 @@
 ## GameplayTags
 
 - Can be added in code via macros
+
 ``` cpp
 
 // In the header file
@@ -24,6 +25,8 @@ UE_DEFINE_GAMEPLAY_TAG(TAG_Character_Movement_Walk, "Character.Movement.Walk");
 UE_DEFINE_GAMEPLAY_TAG(TAG_Equipment_Type_Weapon, "Equipment.Type.Weapo");
 
 ```
+
+## Using GAmeplay Tags in C++
 
 ``` cpp
 #include "GameplayTagContainer.h"
