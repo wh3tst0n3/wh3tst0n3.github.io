@@ -25,6 +25,8 @@ There is only one Asset Manager instance ever, this includes in the editor.
 ### Primary Asset ***Type***
 
 - One per item class
+- Uses a unique subclass of `UPrimaryDataAsset`
+- Primary Assets are Top_Level assets, essentially meaning the thing the game talks about - MapType, WeaponType, PotionType
 
 ### Primary Asset ***ID***
 
@@ -42,12 +44,7 @@ There is only one Asset Manager instance ever, this includes in the editor.
 
 - The assets that a Primary Asset type is comprised of
 
-## Primary Asset ***Type***
-
-- Uses a unique subclass of `UPrimaryDataAsset`
-- Primary Assets are Top_Level assets, essentially meaning the thing the game talks about - MapType, WeaponType, PotionType
-
-### To declare a new Primary Data Asset
+## To declare a new Primary Data Asset
 
 ``` cpp
 

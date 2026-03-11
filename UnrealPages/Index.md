@@ -4,7 +4,6 @@
 
 - Can be added in code via macros
 
-
 ``` cpp
 
 // In the header file
@@ -25,9 +24,7 @@ UE_DEFINE_GAMEPLAY_TAG(TAG_Equipment_Type_Weapon, "Equipment.Type.Weapo");
 
 ```
 
-
 ## Using Gameplay Tags in C++
-
 
 ``` cpp
 
@@ -65,9 +62,7 @@ if (GameplayTags.HasTagExact(TAG_Weapon_Type_Rifle))
 
 ## Custom Debug Logs
 
-
 - Can be added in code via macros
-
 
 ``` cpp
 
@@ -79,8 +74,7 @@ DEFINE_LOG_CATEGORY(MyLogName);
 
 ```
 
-
-You can then use your custom log category when 
+You can then use your custom log category when
 
 ## Data Driven Gameplay Elements
 
@@ -97,4 +91,3 @@ Cumbersome for simple data, but much better suited to things like complex object
 Data Tables are *slower* than Data Assets and Curve Tables
 
 Data Assets can e thought of as a single row entry in a complex data table.
-
