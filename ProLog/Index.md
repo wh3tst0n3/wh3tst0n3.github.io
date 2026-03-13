@@ -8,3 +8,51 @@
 ## 12 March 2026
 
 - Updated Dovr to switch between First and Third person cams. It's kinda wonky but it's mostly pretty good. Added a flipflop to disable/enable input on ability activation. Starting a new Unity prototype.
+
+## 13 March 2026
+
+So it turns out there's a little bug with Unreal GAS that messes with (the validity of) the player controller. Best practice is to add
+
+```cpp
+
+// Character.h
+
+virtual void PossessedBy(AController* NewController) override;
+virtual void UnPossessed();
+
+// Character.cpp
+
+void AGASCharacter::PossessedBy(AController* NewController) override
+{
+    Super::PossessedBy(NewController);
+    // other logic here
+    ASC->RefershAbilityActorInfo();
+}
+
+void AGASCharacter::UnPossessed()
+{
+    ASC->RefershAbilityActorInfo();
+}
+
+
+```
+
+And quite possibly
+
+``` cpp
+
+// AssetManager.cpp
+
+#include "AbilitySystemGlobals.h"
+
+void UMyAssetManager::StartInitialLoading()
+{
+    Super::StartInitialLoading();
+
+    UAbilitySystemGlobals::Get().InitGlobalData();
+}
+
+
+
+```
+
